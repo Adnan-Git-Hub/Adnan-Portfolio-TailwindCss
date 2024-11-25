@@ -185,7 +185,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="ml-6 grow">
-                  <p className="mb-2 font-bold ">Mobile</p>
+                  <p className="mb-2 font-bold ">Contact No.</p>
                   <p className="text-neutral-500">0092-305-6011475</p>
                 </div>
               </div>
