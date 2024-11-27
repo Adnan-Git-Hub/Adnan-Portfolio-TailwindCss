@@ -19,8 +19,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}> 
+    <html lang="en" className="overflow-x-hidden">
+  <body className={`${inter.className} overflow-x-hidden`}>
+
      
       <header className="text-white body-font bg-orange-950">
   <div className="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
@@ -44,33 +45,34 @@ export default function RootLayout({
 </header>
         {children}
         
-        
         <>
-      {/* Chatbase Config */}
-      <Script id="chatbase-config" strategy="beforeInteractive">
-        {`
-          window.embeddedChatbotConfig = {
-            chatbotId: "LAvix7Jn1759ssghJ3iIl",
-            domain: "www.chatbase.co"
-          };
-        `}
-      </Script>
+          {/* Chatbase Config */}
+          <Script id="chatbase-config" strategy="beforeInteractive">
+            {`
+              window.embeddedChatbotConfig = {
+                chatbotId: "LAvix7Jn1759ssghJ3iIl",
+                domain: "www.chatbase.co"
+              };
+            `}
+          </Script>
 
-      {/* Chatbase Embed Script */}
-      <Script
-        src="https://www.chatbase.co/embed.min.js"
-        strategy="lazyOnload"
-        data-chatbot-id="LAvix7Jn1759ssghJ3iIl"
-        data-domain="www.chatbase.co"
-        data-chat-icon="https://your-custom-logo-url.png"
-      />
+          {/* Chatbase Embed Script */}
+          <Script
+            src="https://www.chatbase.co/embed.min.js"
+            strategy="lazyOnload"
+            data-chatbot-id="LAvix7Jn1759ssghJ3iIl"
+            data-domain="www.chatbase.co"
+            data-chat-icon="https://your-custom-logo-url.png"
+          />
 
-      {/* Chatbot Icon Placeholder */}
-      <div
-        className="fixed bottom-4 right-4 z-50 w-16 h-16 sm:w-14 sm:h-14 md:w-20 md:h-20 lg:w-24 lg:h-24"
-        aria-label="Chatbot Icon"
-      ></div>
-    </>
+          {/* Chatbot Icon Placeholder */}
+          <div
+            className="fixed bottom-4 right-4 z-50 w-12 h-12 sm:w-14 sm:h-14 md:w-20 md:h-20 lg:w-24 lg:h-24"
+            aria-label="Chatbot Icon"
+          ></div>
+        </>
+        
+
         </body>
     </html>
   );

@@ -1,4 +1,4 @@
-// File: D:\Adnan-Portfolio-TailwindCss\src\app\layout.tsx
+// File: D:\Gen-AI-Engg- Course\Next.js Classes\Asignments\Adnan-Portfolio-TailwindCss\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

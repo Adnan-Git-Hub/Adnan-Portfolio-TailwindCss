@@ -53,7 +53,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <section className="bg-black text-gray-100 body-font py-24">
+    <section className="bg-gray-900 text-gray-100 body-font py-24">
       <div className="container px-6 mx-auto">
         <h1 className="flex justify-center items-center pb-14 text-5xl font-serif font-bold text-white hover:text-pink-600 animate-bounce hover:uppercase">
           <span className="text-pink-600 text-5xl hover:text-white">S</span>kills

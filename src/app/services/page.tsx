@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Services() {
   return (
     <>
-      <section className="text-white body-font bg-black py-24">
+      <section className="text-white body-font bg-gray-900 py-24">
         <div className="container mx-auto">
           <div className="text-center mb-20">
             <h1 className="flex justify-center items-center pb-14 text-5xl font-serif font-bold text-white hover:text-pink-600 animate-bounce hover:uppercase">
